@@ -5,7 +5,7 @@
 //
 //6, 1, 33 -> [6, 1, 33]
 
-int[] array = GetRndArray(8);//
+int[] array = GetRndArray(8);
 
 
 int[] GetRndArray(int arrayLength)

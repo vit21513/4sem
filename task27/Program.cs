@@ -20,16 +20,15 @@ int Digits(int numbers)    //определяем  из скольки чисе�
 
 int dig = Digits(num);   // переменная хранит число регистров
 
-int[] nums = new int[dig];         // обьявлем массив размером в количество символов введеннного числа
+int[] nums = new int[dig]; // обьявлем массив размером в количество символов введеннного числа
 
 
 int indexArray = nums.Length - 1;
-
 while (indexArray >= 0)
 {
     nums[indexArray] = num % 10;
-    num = num / 10; indexArray = indexArray - 1;
-
+    num = num / 10;
+    indexArray = indexArray - 1;
 }
 
 int SumNumber(int digg)
@@ -41,7 +40,6 @@ int SumNumber(int digg)
     }
     return sumnumb;
 }
-
 
 int sum = SumNumber(dig);
 
