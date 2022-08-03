@@ -24,14 +24,13 @@ int[] nums = new int[dig];         // обьявлем массив размер
 
 
 int indexArray = nums.Length - 1;
+
 while (indexArray >= 0)
 {
     nums[indexArray] = num % 10;
-    num = num / 10;
-    indexArray = indexArray - 1;
+    num = num / 10; indexArray = indexArray - 1;
 
 }
-
 
 int SumNumber(int digg)
 {
@@ -46,5 +45,5 @@ int SumNumber(int digg)
 
 int sum = SumNumber(dig);
 
-Console.WriteLine($" сумму цифр в числе составляет  {sum} ");
+Console.WriteLine($" сумма цифр в числе составляет  {sum} ");
 
